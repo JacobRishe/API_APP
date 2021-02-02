@@ -1,0 +1,62 @@
+body {
+  align-items: center;
+  text-align: center;
+  background-color: #000;
+  margin: 150px auto;
+}
+
+h1 {
+  font-size: 100px;
+  margin: 0;
+}
+
+h6 {
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 150px;
+  letter-spacing: .14em;
+}
+
+p {
+  color: #fff;
+  font-size: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.moovie {
+  font-family: 'Righteous', cursive;
+  letter-spacing: .25em;
+}
+
+.wiz {
+font-family: 'Hachi Maru Pop', cursive;
+letter-spacing: -.20em;
+}
+/* .card {
+  background-color: #000;
+  height: 200px;
+  width: 500px auto;
+  border: 5px solid red;
+} */
+input {
+  text-align: center;
+  bottom: 0;
+  height: 50px;
+  width: 500px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  border: none;
+}
+
+button {
+  height: 50px;
+  width: 125px;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-left: 15px;
+  background-color: #fff;
+  border: none;
+  font-size: 25px;
+  color: #3C78D8;
+}
