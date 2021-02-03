@@ -118,6 +118,11 @@ button {
   height: 444px;
 }
 
+.movieTitle {
+  margin: 0;
+  padding-bottom: 15px;
+}
+
 img {
   padding: 6px;
   margin: 6px;

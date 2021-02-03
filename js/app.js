@@ -14,8 +14,6 @@ const getMovie = (event) => {
           // let divElement = document.createElement('div')
           let movieInfo = document.getElementById('movieInfo')
           let moviePic = document.getElementById('poster')
-          let bottomHeader = document.getElementById('bottom-header')
-          console.log(bottomHeader)
 
           let movieTitle = document.createElement('h3')
           movieTitle.setAttribute('class', 'movieTitle')
@@ -41,19 +39,32 @@ const getMovie = (event) => {
           movieInfo.appendChild(movieDir)
           console.log(movieDir)
 
+          let movieRuntime = document.createElement('h3')
+          movieRuntime.setAttribute('class', 'Runtime')
+          movieRuntime.textContent = data.Runtime
+          movieInfo.appendChild(movieRuntime)
+          console.log(movieRuntime)
+
+          let movieActors = document.createElement('h3')
+          movieActors.setAttribute('class', 'Actors')
+          movieActors.textContent = data.Actors
+          movieInfo.appendChild(movieActors)
+          console.log(movieActors)
+
+          let moviePlot = document.createElement('h3')
+          moviePlot.setAttribute('class', 'Plot')
+          moviePlot.textContent = data.Plot
+          movieInfo.appendChild(moviePlot)
+          console.log(moviePlot)
+
           let poster = document.createElement('img')
           poster.setAttribute('src', data.Poster)
           moviePic.appendChild(poster)
 
           sidebar.appendChild(movieInfo)
-          
-          //appending the div to the dom
-          document.getElementById('searchResults').appendChild(divElement)
 
-      // append to html document
-
-      // console.log(data)
-      // displayMovie.innerText = data.value
+          //appending the div to the dom-----why? works without it
+          // document.getElementById('searchResults').appendChild(divElement)
     })
 }
 //
