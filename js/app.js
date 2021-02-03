@@ -1,9 +1,6 @@
-console.log("sanity check!")
-
-
 let exploreButton = document.querySelector('button')
 //select the element of where the search is being displayed and assign it to a variable
-let displayMovie = document.querySelector('p')
+// let displayMovie = document.querySelector('p')
 //access the API and grab the data of the search and assign that data to a variable with a condition
 const getMovie = (event) => {
   let movieInput = document.getElementById('input').value
@@ -13,11 +10,8 @@ const getMovie = (event) => {
   //our actual data
     .then(data => {
       console.log(data)
-   // iterate through the array data.search
-
-          console.log(data.Title)
           //nesting divs
-          let divElement = document.createElement('div')
+          // let divElement = document.createElement('div')
           let movieInfo = document.getElementById('movieInfo')
           let moviePic = document.getElementById('poster')
           let bottomHeader = document.getElementById('bottom-header')
@@ -41,10 +35,18 @@ const getMovie = (event) => {
           movieInfo.appendChild(movieRated)
           console.log(movieRated)
 
+          let movieDir = document.createElement('h3')
+          movieDir.setAttribute('class', 'Dir')
+          movieDir.textContent = data.Director
+          movieInfo.appendChild(movieDir)
+          console.log(movieDir)
+
           let poster = document.createElement('img')
           poster.setAttribute('src', data.Poster)
           moviePic.appendChild(poster)
-          // console.log(element, i)
+
+          sidebar.appendChild(movieInfo)
+          
           //appending the div to the dom
           document.getElementById('searchResults').appendChild(divElement)
 

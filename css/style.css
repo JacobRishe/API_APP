@@ -47,7 +47,11 @@ input {
   width: 500px;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 25px;
-  border: none;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 90px;
+  border: 1px;
 }
 
 button {
@@ -56,9 +60,15 @@ button {
   font-family: 'Josefin Sans', sans-serif;
   margin-left: 15px;
   background-color: #fff;
-  border: none;
+  border: 1px;
   font-size: 25px;
-  color: #3C78D8;
+  color: #fff;
+  background: linear-gradient(130deg,#FFE599,#CC0000,#6AA84F 41.07%,#3C78D8 76.05%);
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 35px;
+  cursor: pointer;
 }
 
 .movieTitle, .movieYear, .Rated {
@@ -81,14 +91,31 @@ button {
   position: relative;
 }
 
+#poster {
+  display: flex;
+  flex-direction: row;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-top: 40px;
+  text-align: left;
+}
+
 #movieInfo {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#movieInfo, #sidebar {
+  display: flex;
+  flex-direction: column;
   color: #fff;
-  background-color: black;
-  opacity: .5;
   width: 300px;
   height: 444px;
-  margin: 6px;
-  padding: 6px;
 }
 
 img {
@@ -97,9 +124,17 @@ img {
   position: absolute;
   z-index: -1;
   border: 1px;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
+  border-radius: 10px 10px 10px 10px;
+  /* border-bottom-right-radius: 10px;
   border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+  border-top-right-radius: 7px; */
+  background: linear-gradient(130deg,#FFE599,#CC0000,#6AA84F 41.07%,#3C78D8 76.05%);
 }
+
+/* #bottom-header {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 444px;
+} */
