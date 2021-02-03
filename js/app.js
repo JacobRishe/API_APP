@@ -17,43 +17,43 @@ const getMovie = (event) => {
 
           let movieTitle = document.createElement('h3')
           movieTitle.setAttribute('class', 'movieTitle')
-          movieTitle.textContent = data.Title
+          movieTitle.textContent = `Title: ${data.Title}`
           movieInfo.appendChild(movieTitle)
           console.log(movieTitle)
 
           let movieYear = document.createElement('h3')
           movieYear.setAttribute('class', 'movieYear')
-          movieYear.textContent = data.Year
+          movieYear.textContent = `Year: ${data.Year}`
           movieInfo.appendChild(movieYear)
           console.log(movieYear)
 
           let movieRated = document.createElement('h3')
           movieRated.setAttribute('class', 'Rated')
-          movieRated.textContent = data.Rated
+          movieRated.textContent = `Rated: ${data.Rated}`
           movieInfo.appendChild(movieRated)
           console.log(movieRated)
 
           let movieDir = document.createElement('h3')
           movieDir.setAttribute('class', 'Dir')
-          movieDir.textContent = data.Director
+          movieDir.textContent = `Director: ${data.Director}`
           movieInfo.appendChild(movieDir)
           console.log(movieDir)
 
           let movieRuntime = document.createElement('h3')
           movieRuntime.setAttribute('class', 'Runtime')
-          movieRuntime.textContent = data.Runtime
+          movieRuntime.textContent = `Runtime: ${data.Runtime}`
           movieInfo.appendChild(movieRuntime)
           console.log(movieRuntime)
 
           let movieActors = document.createElement('h3')
           movieActors.setAttribute('class', 'Actors')
-          movieActors.textContent = data.Actors
+          movieActors.textContent = `Actors: ${data.Actors}`
           movieInfo.appendChild(movieActors)
           console.log(movieActors)
 
           let moviePlot = document.createElement('h3')
           moviePlot.setAttribute('class', 'Plot')
-          moviePlot.textContent = data.Plot
+          moviePlot.textContent = `Plot: ${data.Plot}`
           movieInfo.appendChild(moviePlot)
           console.log(moviePlot)
 
@@ -62,6 +62,14 @@ const getMovie = (event) => {
           moviePic.appendChild(poster)
 
           sidebar.appendChild(movieInfo)
+          //reload button
+          // let btnReload = document.createElement('btn')
+          // btnReload.setAttribute('class', btnReload)
+          // btnReload.textContent = 'Refresh Search'
+          // const reloadButton = (evt) => {
+          //   btnReload.addEventListener('click', evt)
+          //   return location.reload();
+          // }
 
           //appending the div to the dom-----why? works without it
           // document.getElementById('searchResults').appendChild(divElement)
