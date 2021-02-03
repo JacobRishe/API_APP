@@ -16,27 +16,34 @@ const getMovie = (event) => {
    // iterate through the array data.search
 
           console.log(data.Title)
-          //creating a div
+          //nesting divs
           let divElement = document.createElement('div')
+          let movieInfo = document.getElementById('movieInfo')
+          let moviePic = document.getElementById('poster')
+          let bottomHeader = document.getElementById('bottom-header')
+          console.log(bottomHeader)
 
           let movieTitle = document.createElement('h3')
-          divElement.setAttribute('class', 'movieTitle')
-          divElement.textContent = data.Title
-          divElement.appendChild(movieTitle)
+          movieTitle.setAttribute('class', 'movieTitle')
+          movieTitle.textContent = data.Title
+          movieInfo.appendChild(movieTitle)
+          console.log(movieTitle)
 
           let movieYear = document.createElement('h3')
           movieYear.setAttribute('class', 'movieYear')
           movieYear.textContent = data.Year
-          divElement.appendChild(movieYear)
+          movieInfo.appendChild(movieYear)
+          console.log(movieYear)
 
           let movieRated = document.createElement('h3')
           movieRated.setAttribute('class', 'Rated')
           movieRated.textContent = data.Rated
-          divElement.appendChild(movieRated)
+          movieInfo.appendChild(movieRated)
+          console.log(movieRated)
 
           let poster = document.createElement('img')
           poster.setAttribute('src', data.Poster)
-          divElement.appendChild(poster)
+          moviePic.appendChild(poster)
           // console.log(element, i)
           //appending the div to the dom
           document.getElementById('searchResults').appendChild(divElement)
