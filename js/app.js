@@ -4,7 +4,7 @@ const getMovie = (event) => {
   document.querySelector('#movieInfo').innerHTML = ""
 
   let movieInput = document.getElementById('input').value
-  fetch(`http://www.omdbapi.com/?t=${movieInput}&apikey=101d95ae`)
+  fetch(`https://www.omdbapi.com/?t=${movieInput}&apikey=101d95ae`)
     .then(response => response.json())
     .then(data => {
 
