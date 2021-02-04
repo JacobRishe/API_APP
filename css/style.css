@@ -34,12 +34,7 @@ p {
 font-family: 'Hachi Maru Pop', cursive;
 letter-spacing: -.20em;
 }
-/* .card {
-  background-color: #000;
-  height: 200px;
-  width: 500px auto;
-  border: 5px solid red;
-} */
+
 input {
   text-align: center;
   bottom: 0;
@@ -133,16 +128,5 @@ img {
   z-index: -1;
   border: 1px;
   border-radius: 10px 10px 10px 10px;
-  /* border-bottom-right-radius: 10px;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px; */
   background: linear-gradient(130deg,#FFE599,#CC0000,#6AA84F 41.07%,#3C78D8 76.05%);
 }
-
-/* #bottom-header {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  height: 444px;
-} */
