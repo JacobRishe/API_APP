@@ -11,3 +11,10 @@ Installation Instructions: Once the user loads the landing page, they will type 
 
 User Story: My users are movie fanatics who are thining of a specific movie but can't pinpoint that one interesting fact that has stomped them. My app will solve their curiosity. 
 
+![Wireframe_LandingView](https://user-images.githubusercontent.com/68757343/106967765-8e4af180-66fc-11eb-8f35-e178ed3687a0.png)
+
+![Wireframe_ResultsView](https://user-images.githubusercontent.com/68757343/106967895-bc303600-66fc-11eb-8aa3-75c92f424cd1.png)
+
+Major Hurdles: Figuring out how to refresh my search history so that the user could search again.  
+
+
