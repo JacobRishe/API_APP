@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=, initial-scale=1.0">
+  <meta name="viewport", initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="css/style.css" rel="stylesheet"></link>
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,10 +26,10 @@
   </div>
   <p>instant facts about your favorite movies</p>
   <form>
-    <input id="input" placeholder="enter movie title"></input>
+    <input onfocus="this.value=''" id="input" placeholder="enter movie title"></input>
     <button type="button">explore!</button>
   </form>
-  <div class="allCards">
+  <div id="allInfo" class="allCards">
     <div id="poster" class="container">
       <div id="movieInfo" class="container"></div>
     </div>

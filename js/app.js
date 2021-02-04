@@ -1,8 +1,10 @@
 let exploreButton = document.querySelector('button')
-//select the element of where the search is being displayed and assign it to a variable
-// let displayMovie = document.querySelector('p')
 //access the API and grab the data of the search and assign that data to a variable with a condition
 const getMovie = (event) => {
+  document.querySelector('#movieInfo').innerHTML = ""
+  // if (document.querySelector('#poster-img') !== undefined) {
+  //   document.querySelector('#poster').removeChild('#poster-img')
+  // }
   let movieInput = document.getElementById('input').value
   fetch(`http://www.omdbapi.com/?t=${movieInput}&apikey=101d95ae`)
 //convert response to json which will return another promise
@@ -14,6 +16,7 @@ const getMovie = (event) => {
           // let divElement = document.createElement('div')
           let movieInfo = document.getElementById('movieInfo')
           let moviePic = document.getElementById('poster')
+          let allInfo = document.getElementById('allInfo')
 
           let movieTitle = document.createElement('h3')
           movieTitle.setAttribute('class', 'movieTitle')
@@ -58,22 +61,23 @@ const getMovie = (event) => {
           console.log(moviePlot)
 
           let poster = document.createElement('img')
+          poster.setAttribute('id', 'poster-img')
           poster.setAttribute('src', data.Poster)
           moviePic.appendChild(poster)
 
           sidebar.appendChild(movieInfo)
-          //reload button
-          // let btnReload = document.createElement('btn')
-          // btnReload.setAttribute('class', btnReload)
-          // btnReload.textContent = 'Refresh Search'
-          // const reloadButton = (evt) => {
-          //   btnReload.addEventListener('click', evt)
-          //   return location.reload();
-          // }
 
+          // console.log(renderMovies(movieInput))
+          //clearing data after explore button is clicked
+          //assign a click method
+          //if statement
+          // exploreButton.addEventListener('click', (e) => {
+          //   allInfo.clear()
+          // })
+          // console.log('click', exploreButon)
           //appending the div to the dom-----why? works without it
           // document.getElementById('searchResults').appendChild(divElement)
     })
 }
-//
+
 exploreButton.addEventListener('click', getMovie)

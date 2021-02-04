@@ -47,11 +47,9 @@ input {
   width: 500px;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 25px;
-  border-bottom-left-radius: 90px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 90px;
+  border-radius: 90px 10px 90px 10px;
   border: 1px;
+  outline: none;
 }
 
 button {
@@ -69,6 +67,11 @@ button {
   border-top-left-radius: 10px;
   border-top-right-radius: 35px;
   cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
 
 .movieTitle, .movieYear, .Rated {
@@ -100,7 +103,7 @@ button {
   display: flex;
   flex-direction: column;
   margin-left: 300px;
-  margin-top: 40px;
+  margin-top: 30px;
   text-align: left;
 }
 
