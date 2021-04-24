@@ -9,7 +9,7 @@ Technologies Used: HTML, CSS, JavaScript, Git Bash, Atom, API
 
 Installation Instructions: Once the user loads the landing page, they will type there favorite movie into the input field. Next, they will hit the search button to see the display of random facts about that movie along with a poster of that movie.
 
-User Story: My users are movie fanatics who are thining of a specific movie but can't pinpoint that one interesting fact that has stomped them. My app will solve their curiosity. 
+User Story: My users are movie fanatics who are thinking of a specific movie but can't pinpoint that one interesting fact that has stumped them. My app will solve their curiosity. 
 
 ![Wireframe_LandingView](https://user-images.githubusercontent.com/68757343/106967765-8e4af180-66fc-11eb-8f35-e178ed3687a0.png)
 
